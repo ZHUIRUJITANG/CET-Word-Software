@@ -22,7 +22,7 @@
 
 ## 📦 下载安装
 
-前往 [Releases](https://github.com/你的用户名/cet-vocab-offline/releases) 页面下载最新版 `.exe` 安装包，双击安装即可使用。
+前往 [Releases](https://github.com/ZHUIRUJITANG/cet-vocab-offline/releases) 页面下载最新版 `.exe` 安装包，双击安装即可使用。
 
 ## 🚀 本地开发
 
