@@ -22,14 +22,14 @@
 
 ## 📦 下载安装
 
-前往 [Releases](https://github.com/ZHUIRUJITANG/cet-vocab-offline/releases) 页面下载最新版 `.exe` 安装包，双击安装即可使用。
+前往 前往 [Releases](https://github.com/ZHUIRUJITANG/CET-Word-Software/releases) 页面下载最新版 `.exe` 安装包，双击安装即可使用。
 
 ## 🚀 本地开发
 
 ```bash
 # 克隆仓库
-git clone https://github.com/ZHUIRUJITANG/cet-vocab-offline.git
-cd cet-vocab-offline
+git clone https://github.com/ZHUIRUJITANG/CET-Word-Software.git
+cd cd CET-Word-Software
 
 # 安装依赖
 npm install
