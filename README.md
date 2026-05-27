@@ -29,7 +29,7 @@
 ```bash
 # 克隆仓库
 git clone https://github.com/ZHUIRUJITANG/CET-Word-Software.git
-cd cd CET-Word-Software
+cd CET-Word-Software
 
 # 安装依赖
 npm install
