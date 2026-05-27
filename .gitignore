@@ -1,0 +1,8 @@
+node_modules/
+dist/
+out/
+resources/stardict.db
+resources/ecdict-sqlite-28.zip
+*.log
+.env
+.DS_Store

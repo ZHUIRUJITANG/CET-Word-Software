@@ -1,0 +1,72 @@
+{
+  "name": "cet-vocab-offline",
+  "version": "1.0.0",
+  "description": "CET单词软件离线版",
+  "main": "./out/main/index.js",
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "build:win": "electron-vite build && set CSC_IDENTITY_AUTO_DISCOVERY=false && set NPM_CONFIG_LOGLEVEL=silent && set NODE_NO_WARNINGS=1 && electron-builder --win",
+    "preview": "electron-vite preview",
+    "start": "electron-vite preview"
+  },
+  "dependencies": {
+    "@electron-toolkit/utils": "^3.0.0",
+    "chart.js": "^4.5.1",
+    "electron-store": "^8.2.0",
+    "sql.js": "^1.14.1",
+    "vue": "^3.5.13",
+    "vue-chartjs": "^5.3.3",
+    "vue-router": "^5.0.7"
+  },
+  "devDependencies": {
+    "@electron/rebuild": "^4.0.4",
+    "@types/better-sqlite3": "^7.6.13",
+    "@vitejs/plugin-vue": "^5.2.3",
+    "electron": "^35.7.5",
+    "electron-builder": "^26.8.1",
+    "electron-vite": "^5.0.0",
+    "typescript": "^5.7.3",
+    "vite": "^6.3.5",
+    "vue-tsc": "^2.2.8"
+  },
+  "build": {
+    "appId": "com.cet.vocab.offline",
+    "productName": "CET单词软件离线版",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "out/**/*"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "shortcutName": "CET单词软件离线版"
+    },
+    "extraResources": [
+      {
+        "from": "resources/",
+        "to": "resources/",
+        "filter": ["**/*"]
+      },
+      {
+        "from": "out/main/sql-wasm.wasm",
+        "to": "resources/sql-wasm.wasm"
+      }
+    ]
+  }
+}
