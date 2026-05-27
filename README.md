@@ -28,7 +28,7 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/你的用户名/cet-vocab-offline.git
+git clone https://github.com/ZHUIRUJITANG/cet-vocab-offline.git
 cd cet-vocab-offline
 
 # 安装依赖
